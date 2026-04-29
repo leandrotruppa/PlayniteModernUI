@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- BannerImage Control Template -->
+    <ControlTemplate x:Key="BannerImageTemplate">
+        <Border Background="{DynamicResource ControlBackgroundBrush}"
+                CornerRadius="5">
+            <Image Stretch="UniformToFill" 
+                   RenderOptions.BitmapScalingMode="HighQuality"/>
+        </Border>
+    </ControlTemplate>
+
+    <!-- CustomMetadata Control Template -->
+    <ControlTemplate x:Key="CustomMetadataTemplate">
+        <StackPanel>
+            <TextBlock FontWeight="Bold" Foreground="{DynamicResource GlyphBrush}"/>
+            <ItemsControl/>
+        </StackPanel>
+    </ControlTemplate>
+
+</ResourceDictionary>
