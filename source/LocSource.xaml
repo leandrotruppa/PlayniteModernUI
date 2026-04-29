@@ -333,6 +333,11 @@ Selecting "add to exclusion list" option will prevent games from being imported 
     <sys:String x:Key="LOCSettingsCreateLocalization">Help us translate Playnite</sys:String>
     <sys:String x:Key="LOCSettingsRestartAskMessage" xml:space="preserve">Playnite needs to be restarted in order to apply new settings. Restart now?
 
+<!-- ThemeExtras Localization -->
+<sys:String x:Key="LOCExtrasMetadata">Additional Metadata</sys:String>
+<sys:String x:Key="LOCExtrasBanners">Banners</sys:String>
+<sys:String x:Key="LOCExtrasCustomElements">Custom Elements</sys:String>
+
 Restarting will cancel any active tasks (downloads) currently in progress.</sys:String>
     <sys:String x:Key="LOCSettingsRestartTitle">Restart Playnite?</sys:String>
     <sys:String x:Key="LOCSettingsDBPathNotification" xml:space="preserve">Playnite cannot move your library files automatically. You must manually move/copy the files before changing the location. If there is no library in the target location, a new one will be created.
