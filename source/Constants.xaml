@@ -102,6 +102,12 @@
     <sys:Boolean x:Key="GameDetails_Hidden">true</sys:Boolean>
     <sys:Boolean x:Key="GameDetails_Favourite">true</sys:Boolean>
 
+    <!-- ThemeExtras Configuration -->
+    <sys:Boolean x:Key="UseThemeExtras">true</sys:Boolean>
+    <sys:Boolean x:Key="EnableBannerCache">true</sys:Boolean>
+    <sys:Boolean x:Key="EnableVideoMetadata">true</sys:Boolean>
+    <sys:String x:Key="ExtrasMetadataPath">.\ExtraMetadata</sys:String>
+
     <sys:Double x:Key="Zero">0</sys:Double>
 
     <Color x:Key="BlackColor">#FF000000</Color>
@@ -122,7 +128,9 @@
 
     <Color x:Key="TextColor">#FFEBEBEB</Color>
     <Color x:Key="TextColorDark">#FF757575</Color>
-
+    <!--Extras Custom Colors-->
+    <Color x:Key="ExtrasHighlightColor">#FF00D9FF</Color>
+    <SolidColorBrush x:Key="ExtrasHighlightBrush" Color="{DynamicResource ExtrasHighlightColor}" />
     <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}" />
     <SolidColorBrush x:Key="TextBrushDark" Color="{DynamicResource TextColorDark}" />
     <SolidColorBrush x:Key="GlyphBrush" Color="{DynamicResource GlyphColor}" />
