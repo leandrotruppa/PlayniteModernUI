@@ -1,7 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:markup="clr-namespace:Playnite.Extensions.Markup;assembly=Playnite"
+                    xmlns:markup="clr-namespace:Playnite.Extensions.Markup;assembly=Playnite"
+                    xmlns:extras="clr-namespace:Extras;assembly=Extras"
                     mc:Ignorable="d">
 
     <Style TargetType="{x:Type Main}">
@@ -1007,6 +1008,18 @@
                                                                         <Setter Property="Margin" Value="0,0,0,0"/>
                                                                         <Setter Property="Height" Value="{DynamicResource ListGamesHeight}"/>
                                                                         <Setter Property="VerticalAlignment" Value="Bottom"/>
+                                                                                <!-- ThemeExtras Banner Display -->
+                                                                                <Border Tag="{DynamicResource Banners}" 
+                                                                                        Visibility="{Binding RelativeSource={RelativeSource Self}, Path=Tag, 
+                                                                                        Converter={StaticResource BooleanToVisibilityConverter}}"
+                                                                                        Height="100" 
+                                                                                        Margin="0,0,0,10"
+                                                                                        Background="{DynamicResource ControlBackgroundBrush}"
+                                                                                        CornerRadius="5">
+                                                                                    <Image Source="{Binding Id, Converter={StaticResource DirectoryBannerConverter}}"
+                                                                                           Stretch="UniformToFill" 
+                                                                                           RenderOptions.BitmapScalingMode="HighQuality" />
+                                                                                </Border>
                                                                     </DataTrigger>
                                                                     <DataTrigger Binding="{Binding ElementName=ChangeViewButton, Path=IsChecked}" Value="False">
                                                                         <Setter Property="Margin" Value="0,0,0,0"/>
