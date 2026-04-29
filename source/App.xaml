@@ -7,6 +7,9 @@
         <ResourceDictionary Source="GlobalResources.xaml" />
         <ResourceDictionary Source="Constants.xaml" />
         <ResourceDictionary Source="Media.xaml" />
+        <!-- ThemeExtras Resources -->
+        <ResourceDictionary Source="Extras/Theme.xaml" />
+        <ResourceDictionary Source="Extras/Controls/CustomControls.xaml" />
         <ResourceDictionary Source="Images/ButtonPrompts/Xbox/Xbox.xaml" />
         <!--Default Controls-->
         <ResourceDictionary Source="DefaultControls/TextBox.xaml" />
